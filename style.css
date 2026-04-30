@@ -1,0 +1,22 @@
+/* Este código hace que el video ocupe toda la pantalla */
+#dog-bloqueador-total {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(255, 255, 255, 0.98) !important; 
+    z-index: 2147483647 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: all !important;
+}
+
+#dog-bloqueador-total video {
+    max-width: 80%;
+    max-height: 80%;
+    mix-blend-mode: screen !important; 
+    filter: contrast(110%) brightness(105%);
+}
